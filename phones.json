@@ -1,0 +1,22 @@
+[{
+        "name": "Nexus S",
+        "snippet": "Fast just got faster with Nexus S.",
+        "age": 3,
+        "id": 1,
+        "imageUrl": "images/sex1.png"
+    },
+    {
+        "name": "Motorola XOOM™ with Wi-Fi",
+        "snippet": "The Next, Next Generation tablet.",
+        "age": 2,
+        "id": 2,
+        "imageUrl": "images/sex2.png"
+    },
+    {
+        "name": "MOTOROLA XOOM™",
+        "snippet": "The Next, Next Generation tablet.",
+        " age": 1,
+        "id": 3,
+        "imageUrl": "images/sex3.png"
+    }
+]
