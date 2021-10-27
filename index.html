@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="demoApp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div></div>
+    <div ng-controller="SimpleController">
+        <input type="text" ng-model="user.name" />
+        <p>Your name is: {{ user.name }}</p>
+    </div>
 </body>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="app.js"></script>
 </html>
