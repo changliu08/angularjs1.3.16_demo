@@ -9,8 +9,14 @@
 </head>
 
 <body>
+    Search: <input type="text" ng-model="query" />
+    Sort by:
+    <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+    </select>
     <ul ng-controller="PhoneListCtrl">
-        <li ng-repeat="phone in phones">
+        <li ng-repeat="phone in phones | filter: query | orderBy: orderProp">
             <span>{{phone.name}} -- {{phone.snippet}}</span>
         </li>
     </ul>
