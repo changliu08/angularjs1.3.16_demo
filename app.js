@@ -15,7 +15,9 @@ app.controller("PhoneListCtrl", function ($scope, $http) {
     $http.get("phones.json").then(function (resp) {
         $scope.phones = resp.data;
     });
-    // console.log($scope);
-}).controller("PhoneDetailCtrl", function ($scope, $routeParams) {
+}).controller("PhoneDetailCtrl", function ($scope, $routeParams, $http) {
     $scope.phoneId = $routeParams.id;
+    $http.get(`metadata/phone${$scope.phoneId}.json`).then(function (resp) {
+        $scope.phoneInfo = resp.data;
+    });
 });
