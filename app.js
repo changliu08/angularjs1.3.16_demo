@@ -1,10 +1,8 @@
-angular.module("demoApp", []).controller("SimpleController", function($scope){
-    console.log("Controller init scope:", $scope.user);
-    $scope.$watch("user", function() {
-        console.log("show user in $watch ", $scope.user);
-    });
-});
+angular.module("demoApp", []).controller("PhoneListCtrl", function ($scope) {
 
-// angular.element(document).ready(function(){
-//     angular.bootstrap(document, ["demoApp"]);
-// });
+    $scope.phones = [
+        { name: 'Nexus S', snippet: 'Fast just got faster with Nexus S.' },
+        { name: 'Motorola XOOM™ with Wi-Fi', snippet: 'The Next, Next Generation tablet.' },
+        { name: 'MOTOROLA XOOM™', snippet: 'The Next, Next Generation tablet.' }
+    ]
+});
